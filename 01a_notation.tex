@@ -1,0 +1,56 @@
+\documentclass[main.tex]{subfiles}
+\usepackage{seb}
+\graphicspath{{\subfix{images/01a_notation/}}}
+\begin{document}
+\section*{Notation}
+\label{notation}
+\subsection*{General notation}
+\begin{tabular}{C{2cm}l}
+    A &proposition\\
+    $\rx$ &\text{scalar random variable}\\
+    $\rvx$ &\text{vector random variable}\\
+    $\rmX$ &\text{matrix random variable}\\
+    $x$ &\text{scalar}\\
+    $\vx$ &\text{vector}\\
+    $\mX$ &\text{matrix}
+\end{tabular}
+
+\subsection*{Machine learning notation}
+\begin{tabular}{C{2cm}l}
+    $\data$ &data\\
+    $\vx_i$ &$i$'th input data point (generally vector)\\
+    $\vy_i$, $y_i$ &$i$'th supervision data point (vector, scalar)\\
+    $\vpred_i$, $\pred_i$ &$i$'th prediction of a model (vector, scalar)\\
+    $\Ls(\vy_i, \vpred_i)$ &Loss for the $i$'th prediction\\
+\end{tabular}
+
+\subsection*{Neural network notation}
+\begin{tabular}{C{2cm}l}
+    $\vtheta$ &\text{neural network parameters}\\
+    $f_\vtheta$ &neural network parameterized by $\vtheta$\\
+\end{tabular}
+
+\subsection*{Other notation}
+\begin{tabular}{C{2cm}l}
+    $\gaussian$ & Gaussian distribution\\
+    $\KLdiv{\cdot}{\cdot}$ & Kullback-Leibler divergence\\
+    $\E{p}{\rx}$ & Expectation of $\rx$ under distribution $p$\\
+    $\bigO(\cdot)$ & Big-$O$\\
+\end{tabular}
+
+\subsection*{Acronyms}
+\begin{tabular}{C{2cm}l}
+    NN & neural network\\
+    BNN & Bayesian neural network\\
+    VI & variational inference\\
+    MFVI & mean-field variational inference\\
+    FCVI & full-covariance variational inference\\
+    ELBO & evidence lower bound\\
+    GP & Gaussian process\\
+    MC & Monte Carlo\\
+    MCMC & Markov chain Monte Carlo\\
+    i.i.d.& independently and identically distributed\\
+    p.d.f. & probability density function\\
+    c.d.f. & cumulative distribution function
+\end{tabular}
+\end{document}

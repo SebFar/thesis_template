@@ -1,0 +1,74 @@
+\documentclass[11pt, a4paper, twoside, openright]{memoir}
+
+\usepackage{graphicx}
+\graphicspath{{images/}}
+
+\usepackage{seb}
+\usepackage{layouts}
+
+\captionnamefont{\small}
+\captiontitlefont{\small}
+
+\tcbuselibrary{breakable}
+\usepackage{subfiles} % Best loaded last in the preamble
+
+\input{math_commands.tex}
+
+\chapterstyle{ger}
+\begin{document}
+\pagestyle{plain}
+\thispagestyle{empty}
+    \begin{center}
+        \vspace{0.2cm}
+        {\huge {\bfseries {Impressive-sounding Thesis Title}} \par}
+        \vspace*{1ex}
+        {\large \emph{DPhil Thesis} \par}
+        {\large \vspace*{20mm} {{\includegraphics{beltcrest.pdf}} \par} \vspace*{25mm}}
+        {\large \vspace*{1ex}
+            {{\Large Little old me} \par}
+            {{Name of College} \\ University of Oxford \par}
+            \vspace*{1ex}
+            {\texttt{email address} \par}
+            \vspace{1.5cm}
+            {Supervised by Big Shot Prof\par}
+            \vspace*{1cm}
+            {2022}
+        }
+    \end{center}
+\newpage
+\thispagestyle{empty}
+\hfill
+\clearpage
+
+\section*{Acknowledgements}
+\Blindtext
+
+\chapter*{Abstract}
+\blindtext
+\clearpage
+
+\setcounter{tocdepth}{2
+}
+\tableofcontents*
+\clearpage
+\listoffigures*
+\clearpage
+\listoftables*
+\clearpage
+
+\subfile{01_summary}
+\clearpage
+
+\subfile{01a_notation}
+
+\subfile{02_chapter}
+
+
+\bibliographystyle{plainnat}
+\bibliography{thesis_references}
+
+\appendix
+\subfile{02a_chapter}
+
+
+\end{document}

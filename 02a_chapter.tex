@@ -1,0 +1,17 @@
+\documentclass[main.tex]{subfiles}
+\usepackage{seb}
+\graphicspath{{\subfix{images/}}}
+
+\externaldocument{02_chapter}
+\begin{document}
+\ifSubfilesClassLoaded{
+% Stuff to load if you're in single-chapter mode
+}{}
+
+\chapter{Appendix to Chapter}
+\Blindtext
+
+\ifSubfilesClassLoaded{
+\bibliographystyle{plainnat}
+\bibliography{thesis_references}}{}
+\end{document}

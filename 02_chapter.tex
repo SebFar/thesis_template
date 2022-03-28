@@ -1,0 +1,13 @@
+\documentclass[main.tex]{subfiles}
+\usepackage{seb}
+\graphicspath{{\subfix{images/}}}
+\externaldocument{02a_chapter}
+
+\begin{document}
+\chapter{Chapter title}
+\Blindtext
+
+\ifSubfilesClassLoaded{
+\bibliographystyle{plainnat}
+\bibliography{thesis_references}}{}
+\end{document}

@@ -1,0 +1,52 @@
+\ProvidesPackage{seb}
+\usepackage[T1]{fontenc}
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{thmtools, thm-restate}
+\usepackage{amsfonts}
+\usepackage[table]{xcolor}
+\usepackage{tcolorbox}
+\usepackage[list=true,listformat=simple]{subcaption}
+\usepackage{makecell}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{calc}
+\usepackage[shortlabels]{enumitem}
+\usepackage{mathtools}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{blindtext}
+\usepackage{natbib}
+\usepackage{cancel}
+\usepackage{xargs}
+\usepackage{xr-hyper}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{bbding}
+
+% Max and Min
+\DeclareMathOperator*{\maxop}{max}
+\DeclareMathOperator*{\minop}{min}
+
+% Abs
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+
+% Norm
+\DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
+
+% L2Norm
+\DeclarePairedDelimiter{\Ltwonorm}{\left\lVert}{\right\rVert_2}
+
+% Shortcut for some greek letters since we use it so much
+\newcommand{\thet}{\boldsymbol{\theta}}
+\newcommand{\w}{\boldsymbol{\omega}}
+
+% Centred fixed-width columns
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+% Commenting
+\newcommand{\seb}[1]{\todo[backgroundcolor=white,textcolor=blue,linecolor=blue,bordercolor=blue,size=small]{Seb: #1}}
+
+\endinput
